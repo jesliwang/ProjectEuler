@@ -7,3 +7,13 @@ def number_Length(num):
         tmp /=10
 
     return length
+
+
+def gcd(a,b):
+    reminder = 0
+    while b != 0:
+        reminder = a % b
+        a = b
+        b = reminder
+
+    return a
