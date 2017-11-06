@@ -1,3 +1,8 @@
+"""
+可以数学方法解决，效率要高很多
+https://en.wikipedia.org/wiki/Partition_(number_theory)
+"""
+
 import os, sys
 import time
 
