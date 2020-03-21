@@ -4,7 +4,7 @@ def get_prime_dic_and_list(maxNumber):
     primeDic = {}
     primeList = []
     for index in range(2, maxNumber):
-        if not primeDic.has_key(index):
+        if index not in primeDic:
             primeList.append(index)
             facter = 2
             while facter * index < maxNumber:
