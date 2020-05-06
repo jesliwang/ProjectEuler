@@ -1,6 +1,6 @@
 import random
 
-def get_prime_dic_and_list(maxNumber):
+def get_prime_dic_and_list(maxNumber) -> (dict, list):
     primeDic = {}
     primeList = []
     for index in range(2, maxNumber):
@@ -10,12 +10,12 @@ def get_prime_dic_and_list(maxNumber):
             while facter * index < maxNumber:
                 primeDic[facter*index] = 1
                 facter += 1
-
+    
     return primeDic, primeList
 
 
 
-def is_mill_rabin_prime(num):
+def is_mill_rabin_prime(num) -> bool:
     if num < 2:
         return False
 
